@@ -33,13 +33,40 @@ public static void main (String [] args)
 
     if(word2.compareTo(word3)<0)
         System.out.println(word2 +" is before " + word3  );
+        
+    if (word3.equals("Dog")) //A semicolon ends a statement
+        System.out.print("is " +word3 +"equal to " + " Dog?");
 /*
 
       int num = 5, num1 =10, num2 = 4;  // standard hours in a work week
 
       System.out.print ("Enter a number ");
       num = Keyboard.nextInt();
+      
+      // Order is important, will set off execellent every time
+    /*  if (num < 500) // exe if condition is true
+      {
+          System.out.print("You score is Average");
+       }
+      else if (num < 1000)
+          System.out.print("Your score is good");
+      else if (num < 2000)
+          System.out.print("Your score is execellent");
+      else if (num < 1500)
+          System.out.print("You score is very good");
+      
 
+        
+   /* if (num < 500) // exe if condition is true
+      {
+          System.out.print(true);
+       }
+      else{
+          System.out.println(false);
+          System.out.println(always);
+        }
+      
+      
        System.out.print ("Enter a  second number ");
        num1 = Keyboard.nextInt();
 
