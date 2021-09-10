@@ -74,24 +74,24 @@ public static void main (String [] args)
        num2 = Keyboard.nextInt();
 
       System.out.println ();
-/*
+/**/
 
        boolean a = true, b = false, c = false,d;
-        //System.out.println(a  );
-      // c =(a = true) || (b = true);
+        System.out.println(a  );
+      // c =(a = true) || (b = true); // ||=or   or short circuits on true
       // System.out.println(a + "-" + b + "-" + c);
 
 
-    //   c = (a = false) || (b = true);
-    //   System.out.println(a + "-" + b+ "-" + c);
+       //c = (a = false) || (b = true);
+       //System.out.println(a + "-" + b+ "-" + c);
 
-//     c =(a = false) && (b = true);
- //    System.out.print(a + "-" + b+ "-" + c);
+     //c =(a = false) && (b = true);  // and also short circuits on false
+     //System.out.print(a + "-" + b+ "-" + c);
 //
-//     c = (a = true) && (b = false);
-//     System.out.print(a + "-" + b + "-" + c);
+        //c = (a = true) && (b = false);
+        //System.out.print(a + "-" + b + "-" + c);
 
-//     d =!(a = true) || (b = true) && (c = true);
+  //   d =!(a = true) || (b = true) && (c = true);
 //     System.out.print(a + "-" + b + "-" + c+ "-" + d);
 
 
