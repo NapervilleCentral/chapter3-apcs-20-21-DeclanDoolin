@@ -1,3 +1,5 @@
+package e15;
+
 import java.util.Scanner;
 /**
    This program calculates the season for a given month and day.

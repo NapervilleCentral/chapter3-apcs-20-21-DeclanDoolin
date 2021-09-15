@@ -1,3 +1,5 @@
+package e20;
+
 import java.util.Scanner;
 /**
  * Read three floating-point numbers and print
@@ -11,8 +13,21 @@ public class MaxOfThree
       System.out.print("Please enter three numbers: ");
       double largest = 0.0;
       
+      double a = in.nextDouble();
+      double b = in.nextDouble();
+      double c = in.nextDouble();
+      
+      if ( a > b && a > c)
+        largest = a;
+        System.out.println("Largest is " + a);
+      else if (b > a && b > c)
+        largest = b;
+        System.out.println("Largest is " + b);
+        
+      
+      
       // Place your work here
-      . . .
+      
       
       
       

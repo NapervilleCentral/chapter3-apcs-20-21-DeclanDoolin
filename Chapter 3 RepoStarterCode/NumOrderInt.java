@@ -7,6 +7,8 @@ public class NumOrderInt
       Scanner in = new Scanner(System.in);
 
       System.out.print("Enter three numbers: ");
+      
+     
 
    }
 }
