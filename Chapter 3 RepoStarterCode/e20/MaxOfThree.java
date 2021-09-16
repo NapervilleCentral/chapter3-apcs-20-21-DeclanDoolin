@@ -18,11 +18,16 @@ public class MaxOfThree
       double c = in.nextDouble();
       
       if ( a > b && a > c)
-        largest = a;
-        System.out.println("Largest is " + a);
-      else if (b > a && b > c)
-        largest = b;
-        System.out.println("Largest is " + b);
+       largest = a;
+       
+      if (b > a && b > c)
+       largest = b;
+      
+      if (c > a && c > b)
+       largest = c;
+       
+      if (a == b && a ==c)
+       largest = a;
         
       
       

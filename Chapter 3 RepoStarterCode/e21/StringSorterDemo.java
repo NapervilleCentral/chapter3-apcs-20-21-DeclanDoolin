@@ -1,3 +1,5 @@
+package e21;
+
 import java.util.Scanner;
 
 /**
@@ -15,17 +17,10 @@ public class StringSorterDemo
       String str2 = in.next();
       String str3 = in.next();
 
-	//chalenge to use a class
-      //StringSet s = new StringSet(str1, str2, str3);
-
-      //System.out.println(s.getSmallest() + "\n"
-      //                 + s.getMiddle() + "\n"
-      //                 + s.getLargest());
-
-      // . . .  your code here
+    
 
       System.out.println("Smalest is"+ small + "\n"
-	  + "In the Middle is" + middle+ "\n"
+      + "In the Middle is" + middle+ "\n"
       + "The Largest is" + large);
 
 
