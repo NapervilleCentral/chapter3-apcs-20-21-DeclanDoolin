@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Program3_2 here.
+ * Takes a inputted year, outputs if it is a leap year or not
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Declan Doolin
+ * 9/20/2021
  */
 import java.util.Scanner;
 public class Program3_2
@@ -14,20 +14,28 @@ public class Program3_2
         System.out.println("Input a date: ");
         int date = in.nextInt();
         
+        // Calculates if the year is above 1582, if it is divisible by 4,
+        // and if the date is divisible by 100 but not 400.
         if (date <= 1582)
             System.out.println("Not a valid year");
         if (date >= 1582)
          if (date%4 == 0)
-            if (date%100 == 0)
-                if (date%400 == 0)
-                    System.out.println("Leap year!");
-                else 
-                    System.out.println("Not a leap year");
+            if (date%100 == 0 && date% 400==0)
+                System.out.println("This is a leap year!");
+            else if (date%100==0)
+                System.out.println("This is not a valid leapyear.");
             else
-                System.out.println("Not a leap year");
-         else
-            System.out.println("Not a leap year");
-        
+                System.out.println("This is a valid leapyear.");
+         
+            
+                
+                
+               
+                
+                
+                    
+                    
+           
             
             
             
