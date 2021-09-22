@@ -25,29 +25,8 @@ public class Program3_2
             else if (date%100==0)
                 System.out.println("This is not a valid leapyear.");
             else
-                System.out.println("This is a valid leapyear.");
-         
-            
+                System.out.println("This is a valid leapyear.");   
                 
-                
-               
-                
-                
-                    
-                    
-           
-            
-            
-            
-                
-          
-            
-            
-        
-        
-        
-        
-        
     }
 }
         

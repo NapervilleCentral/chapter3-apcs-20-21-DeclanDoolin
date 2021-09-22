@@ -1,9 +1,9 @@
 
 /**
- * Write a description of class Triangle here.
+ * Asks for angles or sides, and figures out if the triangle is right, scalene, isosceles, or equilateral
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Declan Doolin
+ * 9/22/2021
  */
 import java.util.Scanner;
 public class Triangle
@@ -43,6 +43,8 @@ public class Triangle
                 System.out.println("isosceles");
             if (side1 != side2 && side2 != side3)
                 System.out.print("Scalene");
+            if (side1+side2 < side3 || side1 + side3 < side2 || side2 + side3 < side1)
+                System.out.print("Not a triangle!");
             
             }
             
