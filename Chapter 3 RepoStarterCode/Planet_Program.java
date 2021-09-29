@@ -1,21 +1,24 @@
 
 /**
- * Write a description of class Planet_Program here.
+ * Asks user for weight, and a planet choice, outputs weight on that planet
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Declan Doolin
+ * 9/28/2021
  */
-import java.util.Scanner;
+import java.util.*;
+import java.text.*;
 public class Planet_Program
 {
     public static void main (String[] args)
     {
         Scanner Keyboard = new Scanner(System.in);
-        char choice;
+        int choice;
+        DecimalFormat form = new DecimalFormat("0.00");
         System.out.print("What is your weight?");
         double weight = Keyboard.nextDouble();
+        String planet = new String();
         
-       
+       // creates menu for user
         System.out.println("Please choose a planet/moon:");
         System.out.println("Moon: 1");
         System.out.println("Jupiter: 2");
@@ -25,46 +28,59 @@ public class Planet_Program
         System.out.println("Venus: 6");
         System.out.println("Mercury: 7");
         System.out.println("Neptune: 8");
+        System.out.println("Pluto: 9");
         
-        choice = Keyboard.next().charAt(0);
         
+        
+        
+        choice = Keyboard.nextInt();
+        //Establishes switch, calculates weight for each planet
         switch(choice)
         {
-            case '1':
+            case 1:
                 weight = (weight * .166);
-                System.out.println("Your weight on the moon is: " + weight);
+                planet = "Moon";
                 break;
-            case '2':
+            case 2:
                 weight = (weight * 2.36);
-                System.out.println("Your weight on Jupiter is: " +weight);
+                planet = "Jupiter";
                 break;
-            case '3':
+            case 3:
                 weight = (weight * .377);
-                System.out.println("Your weight on Mars is: " +weight);
+                planet = "Mars";
                 break;
-            case '4':
+            case 4:
                 weight = (weight * .916);
-                System.out.println("Your weight on Saturn is: "+weight);
+                planet = "Saturn";
                 break;
-            case '5':
+            case 5:
                 weight = (weight * .889);
-                System.out.println("Your weight on Uranus is: "+weight);
+                planet = "Uranus";
                 break;
-            case '6':
+            case 6:
                 weight = (weight * .907);
-                System.out.println("Your weight on Venus is: "+weight);
+                planet = "Venus";
                 break;
-            case '7':
+            case 7:
                 weight = (weight * .378);
-                System.out.println("Your weight on Mercury is : "+weight);
+                planet = "Mercury";
                 break;
-            case '8':
+            case 8:
                 weight = (weight * 1.12);
-                System.out.println("Your weight on Mercury is :"+weight);
+                planet = "Neptune";
                 break;
+            case 9:
+                weight = (weight * .071);
+                planet = "Pluto";
+                break;
+                
+                
+                
             default:
                 System.out.println("Not a valid input");
         
             }
+            System.out.println("Your weight on the " + planet + " is "+form.format(weight)+ "pounds");
+            
     }
 }
