@@ -1,3 +1,5 @@
+package e22;
+
 import java.util.Random;
 
 public class MontyHall
