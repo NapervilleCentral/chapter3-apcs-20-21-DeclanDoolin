@@ -7,13 +7,24 @@ package Labs;
  * @author (your name)
  * @version (a version number or a date)
  */
-import java.util.*;
+import java.awt.*;
 import TurtleGraphics.StandardPen;
 public class Spiral
 {
     public static void main(String[] args){
         StandardPen pen = new StandardPen();
-        for (int i = 0; i < 100; i++){
+        double x = 130;
+            
+        for (int i = 0; i < 1000; i++){
+            pen.home();
+            pen.setColor(Color.blue);
+            pen.move(x);
+            pen.turn(90);
+            
+            
+            x = (x*1.5);
+            
+            
             
         }
         

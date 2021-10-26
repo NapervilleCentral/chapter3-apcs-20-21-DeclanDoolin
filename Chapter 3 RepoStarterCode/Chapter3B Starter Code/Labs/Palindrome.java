@@ -16,35 +16,20 @@ public class Palindrome
         System.out.println("Please enter a string: ");
         String input = in.nextLine();
         int length = input.length();        
-        String normal = "";
-        String reversed = "";
         if (input != ""){
-            for (int i = 0; i < (length+1); i++){
-                if (input.charAt(length-1) == i)
-                    reversed = "yes"; 
-            if (reversed == "yes")
-                System.out.println("Palindrome!");
-                   
-                
-                
-                 
-                
-                
-                
+            if (input.charAt(0) != input.charAt(length-1))
+                    System.out.println("Not a palidrome");
+            else
+                for (int i = 0; i < (length - 1); i++)
+                    if (input.charAt(i) == input.charAt((length-1))-i)
+                        System.out.println("Palindrome!");   
             }
+        }
+    }
                 
             
              
             
                 
                 
-        }
-        else{
-            System.out.println("Please enter a string");
-        }
-           
         
-        
-        
-    }
-}
