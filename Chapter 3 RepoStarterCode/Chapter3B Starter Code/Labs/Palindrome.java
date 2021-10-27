@@ -1,11 +1,12 @@
 package Labs;
 
 
+
 /**
- * Write a description of class Palindrome here.
+ * Allows user to input a string, displays if it is a palindrome
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Declan Doolin
+ * 10/27/2021
  */
 import java.util.*;
 public class Palindrome
@@ -15,17 +16,33 @@ public class Palindrome
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter a string: ");
         String input = in.nextLine();
-        int length = input.length();        
-        if (input != ""){
-            if (input.charAt(0) != input.charAt(length-1))
-                    System.out.println("Not a palidrome");
-            else
-                for (int i = 0; i < (length - 1); i++)
-                    if (input.charAt(i) == input.charAt((length-1))-i)
-                        System.out.println("Palindrome!");   
-            }
+        int length = input.length();  //inputs a string, finds length      
+        while (input != ""){
+            if (input.charAt(0) != input.charAt(length-1)){//if the first letter is not the same as last, cannot be palindrome
+                    System.out.println("Not a palindrome");
+                }
+            else{
+                for (int i = 0, j = (length-1); i < j; i++){
+                    if (input.charAt(i) == input.charAt(length-i)){
+                        System.out.println(input + "is a palindrome ");
+                    }
+                        
+                  }
+                }
         }
+    
     }
+}//tests each character with its matching character until they meet
+                    
+                
+                
+                //if (input.charAt(length-i) == input.charAt((length-i))){
+                        //System.out.println("Palindrome!");   
+                    
+                    
+            
+        
+    
                 
             
              

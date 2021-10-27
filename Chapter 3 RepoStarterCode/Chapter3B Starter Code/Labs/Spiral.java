@@ -18,12 +18,8 @@ public class Spiral
         for (int i = 0; i < 1000; i++){
             pen.home();
             pen.setColor(Color.blue);
-            pen.move(x);
-            pen.turn(90);
             
-            
-            x = (x*1.5);
-            
+                
             
             
         }

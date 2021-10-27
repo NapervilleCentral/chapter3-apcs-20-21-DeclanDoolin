@@ -2,10 +2,10 @@ package Labs;
 
 
 /**
- * Write a description of class FourLeafRose here.
+ * Draws a four leaf rose
  *
- * @author (your name)
- * @version (a version number or a date)
+ * Declan Doolin
+ * 10/27/2021
  */
 
 import java.util.*;
@@ -15,17 +15,18 @@ public class FourLeafRose
     public static void main(String[] args)
     {
         StandardPen pen = new StandardPen();
+        pen.home();
         int maximum = 100;
         for (int i = 0; i <= 100; i++){
             double theta = i * 2 * Math.PI / maximum;
             double r = Math.cos(2*theta);
-            double x = 100 * r * Math.cos(theta) + 200;
-            double y = 100 * r * Math.sin(theta) + 200;
+            double x = 100 * r * Math.cos(theta);
+            double y = 100 * r * Math.sin(theta); //creates x and y based on the equation
             if (i == 0){
-                pen.move(x,y);       
+                pen.move(x,y); 
             }
             else{
-                pen.move(x,y);
+                pen.move(x,y); //draws rose   
             }
             }
         }
