@@ -1,7 +1,4 @@
 package Labs;
-
-
-
 /**
  * Allows user to input a string, displays if it is a palindrome
  *
@@ -16,20 +13,24 @@ public class Palindrome
         Scanner in = new Scanner(System.in);
         System.out.println("Please enter a string: ");
         String input = in.nextLine();
-        int length = input.length();  //inputs a string, finds length     
-        boolean pal = true;
-        input = input.replaceAll("\\s","");//removes all spaces
-        for(int i = 0;i<input.length()/2;i++){
-            if (input.charAt(i) != input.charAt(input.length()-i-1)){//if the chars are on the same as their matching char, not a palindrome
-                pal = false;
+        String space = input.replace(" ", "");
+        int j = space.length()-1;  //inputs a string, finds length     
+        int pal = 1;
+        for(int i = 0;i<(space.length()/2);i++,j--){
+            if (space.charAt(i) != space.charAt(j)){
+                pal = 2;
             }
+                //if the chars are on the same as their matching char, not a palindrome
+            }
+        if (pal == 1){
+            System.out.println("Palindrome");
         }
-        if (pal)
-            System.out.println("Palindrome!");
-        else
-            System.out.println("Not a palindrome");     
+        else{
+            System.out.println("not a palindrome");
         }
-    }
+    }     
+        }
+    
     
     
 
