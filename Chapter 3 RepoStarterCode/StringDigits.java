@@ -13,9 +13,8 @@ public class StringDigits
         Scanner in = new Scanner(System.in);
         System.out.println("Enter a string");
         String input = in.nextLine();
-        int n = 100;
         String digits = "";
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < input.length()-1; i++){
             if ((input.charAt(i) >= '0')&&(input.charAt(i) <= '9')){
                 digits = "All digits";
             }

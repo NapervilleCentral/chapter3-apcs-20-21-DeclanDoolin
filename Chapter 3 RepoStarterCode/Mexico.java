@@ -11,9 +11,9 @@ public class Mexico
        double pop = 89.2;
        int year = 1990;
        while (pop <= 120){
-           pop = (pop+(pop*.23));
+           pop = pop + (pop*.23);
            year += 1;
-           if (pop == 120){
+        if (pop > 120){
                System.out.println("The population of mexico reaches "+pop+"in "+year);
        }   
      }
