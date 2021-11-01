@@ -19,18 +19,19 @@ public class StringMystery
         int finalnum = Integer.parseInt(file.substring(2195, 2196));
         int totalval = 0;
         int i = 0;
-        int present,second;
+        int present;
+        int second;
         if (finalnum == start){
             totalval += finalnum;
         }
-        while (mys.hasNext()){
-            for(i=0;i<file.length()-1;i++)
+        for(i=0;i<file.length()-1;i++){
                 present = Integer.parseInt(file.substring(i, i+1));
-                second = Integer.parseInt(file.substring(i+1, i+2));
-                if (present == second)
+                second = Integer.parseInt(file.substring((j+i)/2, ((j+i)/2))+1);
+                if (present == second){
                     totalval += second;
-            
-        }
+                }
+                }
+        
         System.out.println(totalval);    
             
             

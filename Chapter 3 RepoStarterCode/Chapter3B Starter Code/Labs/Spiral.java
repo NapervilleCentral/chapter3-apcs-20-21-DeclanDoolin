@@ -13,15 +13,13 @@ public class Spiral
 {
     public static void main(String[] args){
         StandardPen pen = new StandardPen();
-        double x = 130;
-            
+        int length = 5;
         for (int i = 0; i < 1000; i++){
-            pen.home();
             pen.setColor(Color.blue);
-            
-                
-            
-            
+            pen.turn(90);
+            pen.move(length);
+            length += 4;
+     
         }
         
     }
