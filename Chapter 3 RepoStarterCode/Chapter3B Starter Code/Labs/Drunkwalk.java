@@ -15,7 +15,7 @@ public class Drunkwalk
     public static void main(String[] args){
         Random ran = new Random();
         StandardPen pen = new StandardPen();
-        for (int i = 0; i <1000; i++){
+        for (int i = 0; i <100000; i++){
             int x = ran.nextInt(4);
             if (x == 1){
                 pen.turn(90);

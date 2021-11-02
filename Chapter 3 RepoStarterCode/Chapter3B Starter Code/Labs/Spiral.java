@@ -14,7 +14,7 @@ public class Spiral
     public static void main(String[] args){
         StandardPen pen = new StandardPen();
         int length = 5;
-        for (int i = 0; i < 1000; i++){
+        for (int i = 0; i < 100; i++){
             pen.setColor(Color.blue);
             pen.turn(90);
             pen.move(length);
