@@ -10,7 +10,11 @@ package.editor.y=73
 package.frame.height=600
 package.frame.width=800
 package.numDependencies=0
+<<<<<<< Updated upstream
 package.numTargets=9
+=======
+package.numTargets=8
+>>>>>>> Stashed changes
 package.showExtends=true
 package.showUses=true
 readme.height=60
@@ -46,6 +50,7 @@ target4.type=ClassTarget
 target4.width=90
 target4.x=160
 target4.y=10
+<<<<<<< Updated upstream
 target5.height=70
 target5.name=Fibonacci
 target5.showInterface=false
@@ -53,11 +58,21 @@ target5.type=ClassTarget
 target5.width=120
 target5.x=10
 target5.y=370
+=======
+target5.height=50
+target5.name=Fibonacci
+target5.showInterface=false
+target5.type=ClassTarget
+target5.width=80
+target5.x=130
+target5.y=190
+>>>>>>> Stashed changes
 target6.height=50
 target6.name=FourLeafRose
 target6.showInterface=false
 target6.type=ClassTarget
 target6.width=110
+<<<<<<< Updated upstream
 target6.x=130
 target6.y=130
 target7.height=70
@@ -80,3 +95,21 @@ target9.type=ClassTarget
 target9.width=120
 target9.x=310
 target9.y=240
+=======
+target6.x=10
+target6.y=90
+target7.height=50
+target7.name=Spiral
+target7.showInterface=false
+target7.type=ClassTarget
+target7.width=80
+target7.x=130
+target7.y=130
+target8.height=50
+target8.name=FileIO
+target8.showInterface=false
+target8.type=ClassTarget
+target8.width=80
+target8.x=110
+target8.y=250
+>>>>>>> Stashed changes

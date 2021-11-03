@@ -32,9 +32,9 @@ public class StringMystery
                 }
             }
         System.out.println(totalval);
-        for(int i=0;i<(file.length()-1)/2;i++){
+        for(int i=0;i<(file.length()-1)/2;i++,k++){
             present = Integer.parseInt(file.substring(i, i+1));//First number
-            second = Integer.parseInt(file.substring(i+k, i+(k+1)));//Total/2+1,continues as present continues
+            second = Integer.parseInt(file.substring(k, k+1));//Total/2+1,continues as present continues
             if (present == second){
                 totalval = (totalval +second);//if equal, adds together
             }

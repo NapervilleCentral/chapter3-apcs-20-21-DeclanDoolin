@@ -22,12 +22,11 @@ public class FourLeafRose
             double r = Math.cos(2*theta);
             double x = 100 * r * Math.cos(theta);
             double y = 100 * r * Math.sin(theta); //creates x and y based on the equation
-            if (i == 0){
-                pen.move(x,y); 
-            }
-            else{
-                pen.move(x,y); //draws rose   
-            }
+            
+            pen.move(x,y); //draws rose   
+            
+                 //draws rose   
+            
             }
         }
         

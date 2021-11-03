@@ -20,18 +20,27 @@ public class FileIO
         // labs/tjefferson.txt
         // labs/jfk.txt
         // labs/AJackson independence of Texas.txt
+        // labs/obama_inaugural_speach.txt
+        // labs/gwbush.txt
         Scanner scanFile = new Scanner(new File(userFile));
         int count = 0;
         int usercount = 0;
+        int total = 0;
+        int average = 0;
+        int percent = 0;
         while (scanFile.hasNext()){
             String x = scanFile.next();
             count = count + 1; //Will add 1 word every time the loop runs
-            if (x.equals(userWord)){
+            total += x.length();
+            average = total/count;
+            if (x.equalsIgnoreCase(userWord)){
                 usercount += 1;//adds 1 word every time that the loop has the specific word
+                
             }
          }
         System.out.println("Total words in file: " + count);
-        System.out.println("Number of times " +userWord+"was said: "+usercount);
+        System.out.println("Average length of words: "+average);
+        System.out.println("Number of times " +userWord+ " was said: "+usercount);
         }
      }
     
